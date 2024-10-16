@@ -1,0 +1,38 @@
+[
+    {
+        "company": "Egis group",
+        "logo": "/experiences/Logo-egis.gif",
+        "startDate": "Mars 2024",
+        "endDate": "Août 2024",
+        "job": "Développeur Full-stack",
+        "description": "Création d'une application web interopérable pour jumeaux numériques basée sur la technologie iTwin de Bentley Systems",
+        "skills": ["ReactJS", "TailwindCSS", "TypeScript"],
+        "skillsLogo": ["/skills/reactjs.png", "/skills/tailwind.svg", "/skills/aws.png"],
+        "type": "Stage",
+        "company-site": "https://www.egis-group.com/"
+    },
+    {
+        "company": "Fairme",
+        "logo": "/experiences/fairme.jpg",
+        "startDate": "Octobre 2024",
+        "endDate": "Novembre 2024",
+        "job": "Développeur Front-end",
+        "description": "Refonte d'une plateforme dédiée à la mise en relation des clients avec leur solution physique",
+        "skills": ["NuxtJS", "TailwindCSS", "MongoDB"],
+        "skillsLogo": ["/skills/nuxt.svg", "/skills/tailwind.svg", "/skills/mongodb.png"],
+        "type": "Freelance",
+        "companySite": "https://www.fairme.io/"
+    },
+    {
+        "company": "MyFit Solution",
+        "logo": "/experiences/myfit.jpeg",
+        "startDate": "Avril 2022",
+        "endDate": "Août 2022",
+        "job": "Développeur IOS",
+        "description": "Recherche pour améliorer l'utilisation d'ARKit dans Swift Développement d'une nouvelle UX sur une interface de numérisation d'objets 3D dans l'espace",
+        "skills": ["Swift", "Méthode Agile"],
+        "skillsLogo": ["/skills/swift.png", "/skills/aws.png"],
+        "type": "Stage",
+        "companySite": "https://myfit-solutions.com/"
+    }
+]

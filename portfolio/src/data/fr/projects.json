@@ -1,0 +1,83 @@
+{
+    "past": [
+        {
+            "name": "WhaleMusic",
+            "subtitle": "",
+            "description": "",
+            "skills": ["NextJS", "TailwindCSS", "FeathersJS", "Solidity", "Docker", "PostgreSQL", "TurboRepo"],
+            "productionURL": "",
+            "gihtubURL": ""
+        },
+        {
+            "name": "DJCosmo",
+            "subtitle": "Lyrics generator Web Site",
+            "description": "",
+            "skills": ["ReactJS", "FeathersJS", "PostgreSQL", "Docker", "TailwindCSS"],
+            "productionURL": "",
+            "gihtubURL": ""
+        }
+    ],
+    "present": [
+        {
+            "name": "DeProp",
+            "subtitle": "Real estate dApp",
+            "description": "Real estate dApp on Solana where properties are represented as NFTs. Smart contracts automate buying, selling, and renting, with rent payments and ownership transfers handled via blockchain using cryptocurrencies.",
+            "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS"],
+            "productionURL": "",
+            "gihtubURL": "https://github.com/SltCTibo/DeProp"
+        },
+        {
+            "name": "MevBot",
+            "subtitle": "A Solana mev bot",
+            "description": "A Solana MEV (Maximal Extractable Value) bot is an automated program that detects and executes profitable transactions, such as arbitrage or liquidation opportunities, on the Solana blockchain by reordering, inserting, or censoring transactions in a block to maximize gains.",
+            "skills": ["Rust", "Solana", "Rpc"],
+            "productionURL": "",
+            "gihtubURL": "https://github.com/SltCTibo/MevBot"
+        }
+
+    ],
+    "futur": [
+        {
+            "name": "TokenForge",
+            "subtitle": "Solana token creator & NFT minting",
+            "description": " decentralized application enabling users to create and mint both fungible tokens and unique NFTs on the Solana blockchain, offering a seamless interface for tokenization.",
+            "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "Token", "NFT"],
+            "productionURL": "",
+            "gihtubURL": ""
+        },
+        {
+            "name": "SkyShield",
+            "subtitle": "Fligh Delay insurance",
+            "description": "A blockchain-based insurance solution that compensates users automatically for flight delays, using smart contracts on Solana to ensure transparent, real-time claims processing.",
+            "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "DeFi", "Oracles"],
+            "productionURL": "",
+            "gihtubURL": ""
+        },
+        {
+            "name": "YieldQuest",
+            "subtitle": "Solana-based Real-time DeFi Yield Aggregator with Dynamic NFT Rewards",
+            "description": "A decentralized finance platform on Solana that aggregates real-time yield from various DeFi protocols, maximizing user returns. Dynamic NFTs are awarded based on user participation and performance, unlocking additional rewards and gamifying the yield farming experience.",
+            "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS"],
+            "productionURL": "",
+            "gihtubURL": ""
+        }
+    ],
+    "commented": [
+        {
+            "name": "Password Generator",
+            "subtitle": "",
+            "description": "A simple password generator developed in Rust. You can chose what do you want in your password and the length of it. It will then generate you a password.",
+            "skills": ["Rust"],
+            "productionURL": "",
+            "gihtubURL": "https://github.com/SltCTibo/PasswordGenerator"
+        },
+        {
+            "name": "Clipboard Manager",
+            "subtitle": "A Rust app that stores your clipboard history",
+            "description": "A cool application where whenever you copy something to your clipboard, it stores it and let you be able to copy it back later. Even if you copy several things within that time.",
+            "skills": ["Rust"],
+            "productionURL": "",
+            "gihtubURL": "https://github.com/SltCTibo/ClipboardHistoryManager"
+        }
+    ]
+}

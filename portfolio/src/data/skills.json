@@ -1,0 +1,126 @@
+{
+    "language": [
+        {
+            "name": "TypeScript",
+            "icon": "/skills/typescript.png"
+        },
+        {
+            "name": "Rust",
+            "icon": "/skills/rust.webp"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "/skills/javascript.png"
+        },
+        {
+            "name": "Python",
+            "icon": "/skills/python.png"
+        },
+        {
+            "name": "HTML",
+            "icon": "/skills/html5.webp"
+        },
+        {
+            "name": "Solidity",
+            "icon": "/skills/solidity.png"
+        },
+        {
+            "name": "C++",
+            "icon": "/skills/c.svg"
+        },
+        {
+            "name": "C",
+            "icon": "/skills/cL.png"
+        }
+    ],
+    "frontend": [
+        {
+            "name": "ReactJS",
+            "icon": "/skills/reactjs.png"
+        },
+        {
+            "name": "NextJS",
+            "icon": "/skills/nextjs-icon.svg"
+        },
+        {
+            "name": "TailwindCSS",
+            "icon": "/skills/tailwind.svg"
+        },
+        {
+            "name": "CSS",
+            "icon": "/skills/css.webp"
+        }
+    ],
+    "backend": [
+        {
+            "name": "NodeJS",
+            "icon": "/skills/node.png"
+        },
+        {
+            "name": "FeathersJS",
+            "icon": "/skills/feathersJS.png"
+        },
+        {
+            "name": "Axum",
+            "icon": "/skills/axum.png"
+        },
+        {
+            "name": "Actix-web",
+            "icon": "/skills/actix.png"
+        }
+    ],
+    "blockchain": [
+        {
+            "name": "Solana",
+            "icon": "/skills/solana.png"
+        },
+        {
+            "name": "Anchor",
+            "icon": "/skills/anchor.png"
+        },
+        {
+            "name": "DeFi",
+            "icon": "/skills/image.png"
+        },
+        {
+            "name": "Token",
+            "icon": "/skills/token.png"
+        },
+        {
+            "name": "NFT",
+            "icon": "/skills/nft.png"
+        }
+    ],
+    "database": [
+        {
+            "name": "PostgreSQL",
+            "icon": "/skills/postgresql.png"
+        },
+        {
+            "name": "MySQL",
+            "icon": "/skills/mysql.png"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "/skills/mongodb.png"
+        }
+    ],
+    "tools": [
+        {
+            "name": "Git",
+            "icon": "/skills/git.png"
+        },
+        {
+            "name": "GitHub",
+            "icon": "/gihtub.png"
+        },
+        {
+            "name": "GitLab",
+            "icon": "/skills/gitlab.png"
+        },
+        {
+            "name": "Docker",
+            "icon": "/skills/docker.webp"
+        }
+    ]
+}

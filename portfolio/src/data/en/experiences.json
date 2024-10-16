@@ -1,0 +1,38 @@
+[
+    {
+        "company": "Egis group",
+        "logo": "/experiences/Logo-egis.gif",
+        "startDate": "March 2024",
+        "endDate": "August 2024",
+        "job": "Full-stack developer",
+        "description": "Creation of an interoperable web app for digital twins based on the iTwin technology from Bentley Systems",
+        "skills": ["ReactJS", "TailwindCSS", "TypeScript"],
+        "skillsLogo": ["/skills/reactjs.png", "/skills/tailwind.svg", "/skills/aws.png"],
+        "type": "Internship",
+        "companySite": "https://www.egis-group.com/"
+    },
+    {
+        "company": "Fairme",
+        "logo": "/experiences/fairme.jpg",
+        "startDate": "October 2024",
+        "endDate": "November 2024",
+        "job": "Front-end developer",
+        "description": "Re-design of a platform dedicated to linking customers to their physical solution",
+        "skills": ["NuxtJS", "TailwindCSS", "MongoDB"],
+        "skillsLogo": ["/skills/nuxt.svg", "/skills/tailwind.svg", "/skills/mongodb.png"],
+        "type": "Freelance",
+        "companySite": "https://www.fairme.io/"
+    },
+    {
+        "company": "MyFit Solution",
+        "logo": "/experiences/myfit.jpeg",
+        "startDate": "April 2022",
+        "endDate": "August 2022",
+        "job": "IOS developer",
+        "description": "Reasearch into improving the use of ARKit in Swift Development of a new UX on an interface for scanning 3D objects in space",
+        "skills": ["Swift", "AWS"],
+        "skillsLogo": ["/skills/swift.png", "/skills/aws.png"],
+        "type": "Internship",
+        "companySite": "https://myfit-solutions.com/"
+    }
+]
