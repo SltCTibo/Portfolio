@@ -9,7 +9,7 @@
         "skills": ["ReactJS", "TailwindCSS", "TypeScript"],
         "skillsLogo": ["/skills/reactjs.png", "/skills/tailwind.svg", "/skills/aws.png"],
         "type": "Stage",
-        "company-site": "https://www.egis-group.com/"
+        "companySite": "https://www.egis-group.com/"
     },
     {
         "company": "Fairme",
