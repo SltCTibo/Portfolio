@@ -218,13 +218,18 @@ export default function Home() {
             <h1>{title.projects}</h1>
             <div className="pl-8 justify-end flex-1 h-[2px] bg-white" />
           </div>
-          <h2>{title.past}</h2>
-          EIP - DJCosmo - Password generator - clipboard manager
+          { projects.past.map((project, key) => (
+            <ProjectCard data={project} key={key} size={"large"} />
+          ))}
           <h2>{title.present}</h2>
-          DeProp - mev bot
+          { projects.present.map((project, key) => (
+            <ProjectCard data={project} key={key} size={"medium"} />
+          ))}
           <h2>{title.futur}</h2>
+          { projects.futur.map((project, key) => (
+            <ProjectCard data={project} key={key} size={"small"} />
+          ))}
           Solana Token Creator & Nft Minting - Flight delay insurance - Solana-based Real-time DeFi Yield Aggregator with Dynamic NFT Rewards
-          <ProjectCard />
         </div>
         <div id="formation" className="p-10 scroll-mt-[90px]">
           <div className="flex flex-row items-center justify-between space-x-4">

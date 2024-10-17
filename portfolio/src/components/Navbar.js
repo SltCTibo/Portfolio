@@ -7,7 +7,7 @@ const Navbar = ({ data }) => {
 
     // Function to change the navbar background when scrolled
     const changeBackground = () => {
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 200) {
         setNavbarBg(true);
       } else {
         setNavbarBg(false);

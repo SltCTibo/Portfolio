@@ -7,7 +7,7 @@ const Specializations = ({ data, currentLanguage }) => {
     const specialization = currentLanguage === "en" ? enSpecializationDatas : frSpecializationDatas;
 
     return (
-        <div className="w-full p-6 my-[70px] flex flex-row justify-around items-end">
+        <div className="w-full p-6 my-10 flex flex-row justify-around items-end">
           <div className="w-[23%] h-[380px] items-center flex flex-col">
             <div className="relative items-center justify-center bg-cover bg-center flex flex-col w-full h-full rounded-2xl shadow-lg shadow-black py-6 px-12" style={{ backgroundImage: "url('/specializations/specializations.webp')" }}>
                 <h2 className="text-gray-200 text-[30px]">{data.specializations}</h2>

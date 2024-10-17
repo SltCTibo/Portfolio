@@ -7,7 +7,7 @@
         "job": "Développeur Full-stack",
         "description": "Création d'une application web interopérable pour jumeaux numériques basée sur la technologie iTwin de Bentley Systems",
         "skills": ["ReactJS", "TailwindCSS", "TypeScript"],
-        "skillsLogo": ["/skills/reactjs.png", "/skills/tailwind.svg", "/skills/aws.png"],
+        "skillsLogo": ["/skills/reactjs.png", "/skills/tailwind.svg", "/skills/typescript.png"],
         "type": "Stage",
         "companySite": "https://www.egis-group.com/"
     },

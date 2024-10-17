@@ -24,7 +24,8 @@
             "description": "Real estate dApp on Solana where properties are represented as NFTs. Smart contracts automate buying, selling, and renting, with rent payments and ownership transfers handled via blockchain using cryptocurrencies.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS"],
             "productionURL": "",
-            "gihtubURL": "https://github.com/SltCTibo/DeProp"
+            "gihtubURL": "https://github.com/SltCTibo/DeProp",
+            "progress": 25
         },
         {
             "name": "MevBot",
@@ -32,7 +33,8 @@
             "description": "A Solana MEV (Maximal Extractable Value) bot is an automated program that detects and executes profitable transactions, such as arbitrage or liquidation opportunities, on the Solana blockchain by reordering, inserting, or censoring transactions in a block to maximize gains.",
             "skills": ["Rust", "Solana", "Rpc"],
             "productionURL": "",
-            "gihtubURL": "https://github.com/SltCTibo/MevBot"
+            "gihtubURL": "https://github.com/SltCTibo/MevBot",
+            "progress": 10
         }
 
     ],
@@ -43,7 +45,8 @@
             "description": " decentralized application enabling users to create and mint both fungible tokens and unique NFTs on the Solana blockchain, offering a seamless interface for tokenization.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "Token", "NFT"],
             "productionURL": "",
-            "gihtubURL": ""
+            "gihtubURL": "",
+            "startDate": ""
         },
         {
             "name": "SkyShield",
@@ -51,7 +54,8 @@
             "description": "A blockchain-based insurance solution that compensates users automatically for flight delays, using smart contracts on Solana to ensure transparent, real-time claims processing.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "DeFi", "Oracles"],
             "productionURL": "",
-            "gihtubURL": ""
+            "gihtubURL": "",
+            "startDate": ""
         },
         {
             "name": "YieldQuest",
@@ -59,7 +63,8 @@
             "description": "A decentralized finance platform on Solana that aggregates real-time yield from various DeFi protocols, maximizing user returns. Dynamic NFTs are awarded based on user participation and performance, unlocking additional rewards and gamifying the yield farming experience.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS"],
             "productionURL": "",
-            "gihtubURL": ""
+            "gihtubURL": "",
+            "startDate": ""
         }
     ],
     "commented": [
