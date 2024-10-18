@@ -2,26 +2,28 @@
     "past": [
         {
             "name": "WhaleMusic",
-            "subtitle": "",
-            "description": "",
+            "subtitle": "Plateforme basée sur la blockchain Ethereum",
+            "description": "Whalemusic représente l'un des projects innovants d'Epitech, axé sur la technologie de la blockchain. Initié en 2021, ce projet propose une approche décentralisée dans l'industrie musicale, offrant aux jeunes artistes non reconnus la possibilité d'accéder à des fonds pour se faire connaître. Cette plateforme novatrice utilise la blockchain et le web3 pour automatiser la redistribution des fonds et garantir la sauvegarde des droits de coproduction grâce à l'utilisation de NFTs (tokens non fongibles).",
             "skills": ["NextJS", "TailwindCSS", "FeathersJS", "Solidity", "Docker", "PostgreSQL", "TurboRepo"],
-            "productionURL": "",
-            "gihtubURL": ""
+            "productionURL": "https://whalemusic.fr/",
+            "gihtubURL": "",
+            "image": "/projects/whalemusic.webp"
         },
         {
             "name": "DJCosmo",
-            "subtitle": "Lyrics generator Web Site",
-            "description": "",
+            "subtitle": "Site web de génération de lyrics",
+            "description": "DJCosmo est un site web qui permet aux utilisateurs de générer des paroles de musique grâce à notre intégration de l’API OpenAI. Les utilisateurs peuvent profiter de notre solution de différentes manières : générer des paroles avec des paramètres personnalisables, créer des textes sur un sujet librement choisi, ou encore générer des phrases rimant avec celles fournies par l’utilisateur.",
             "skills": ["ReactJS", "FeathersJS", "PostgreSQL", "Docker", "TailwindCSS"],
             "productionURL": "",
-            "gihtubURL": ""
+            "gihtubURL": "",
+            "image": "/projects/djcosmo.png"
         }
     ],
     "present": [
         {
             "name": "DeProp",
-            "subtitle": "Real estate dApp",
-            "description": "Real estate dApp on Solana where properties are represented as NFTs. Smart contracts automate buying, selling, and renting, with rent payments and ownership transfers handled via blockchain using cryptocurrencies.",
+            "subtitle": "DApp immobilière",
+            "description": "DApp immobilière sur Solana où les propriétés sont représentées sous forme de NFT. Les contrats intelligents automatisent l’achat, la vente et la location, le paiement des loyers et les transferts de propriété étant gérés via la blockchain à l’aide de crypto-monnaies.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS"],
             "productionURL": "",
             "gihtubURL": "https://github.com/SltCTibo/DeProp",
@@ -29,8 +31,8 @@
         },
         {
             "name": "MevBot",
-            "subtitle": "A Solana mev bot",
-            "description": "A Solana MEV (Maximal Extractable Value) bot is an automated program that detects and executes profitable transactions, such as arbitrage or liquidation opportunities, on the Solana blockchain by reordering, inserting, or censoring transactions in a block to maximize gains.",
+            "subtitle": "Solana mev bot",
+            "description": "Un bot Solana MEV (Maximal Extractable Value) est un programme automatisé qui détecte et exécute des transactions rentables, telles que des opportunités d'arbitrage ou de liquidation, sur la blockchain Solana en réorganisant, en insérant ou en censurant les transactions dans un bloc pour maximiser les gains.",
             "skills": ["Rust", "Solana", "Rpc"],
             "productionURL": "",
             "gihtubURL": "https://github.com/SltCTibo/MevBot",
@@ -41,8 +43,8 @@
     "futur": [
         {
             "name": "TokenForge",
-            "subtitle": "Solana token creator & NFT minting",
-            "description": " decentralized application enabling users to create and mint both fungible tokens and unique NFTs on the Solana blockchain, offering a seamless interface for tokenization.",
+            "subtitle": "Créateur de Token & Minting de NFT",
+            "description": "Application décentralisée permettant aux utilisateurs de créer et de créer à la fois des jetons fongibles et des NFT uniques sur la blockchain Solana, offrant une interface transparente pour la tokenisation.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "Token", "NFT"],
             "productionURL": "",
             "gihtubURL": "",
@@ -50,8 +52,8 @@
         },
         {
             "name": "SkyShield",
-            "subtitle": "Fligh Delay insurance",
-            "description": "A blockchain-based insurance solution that compensates users automatically for flight delays, using smart contracts on Solana to ensure transparent, real-time claims processing.",
+            "subtitle": "Assurance sur les délais de vols",
+            "description": "Une solution d'assurance basée sur la blockchain qui indemnise automatiquement les utilisateurs en cas de retard de vol, en utilisant des contrats intelligents sur Solana pour garantir un traitement transparent et en temps réel des réclamations.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "DeFi", "Oracles"],
             "productionURL": "",
             "gihtubURL": "",
@@ -59,8 +61,8 @@
         },
         {
             "name": "YieldQuest",
-            "subtitle": "Solana-based Real-time DeFi Yield Aggregator with Dynamic NFT Rewards",
-            "description": "A decentralized finance platform on Solana that aggregates real-time yield from various DeFi protocols, maximizing user returns. Dynamic NFTs are awarded based on user participation and performance, unlocking additional rewards and gamifying the yield farming experience.",
+            "subtitle": "Agrégateur de rendement DeFi en temps réel basé sur Solana avec récompenses NFT dynamiques",
+            "description": "Une plateforme financière décentralisée sur Solana qui regroupe les rendements en temps réel de divers protocoles DeFi, maximisant ainsi les retours des utilisateurs. Les NFT dynamiques sont attribués en fonction de la participation et des performances des utilisateurs, débloquant des récompenses supplémentaires et gamifiant l'expérience de l'agriculture de rendement.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS"],
             "productionURL": "",
             "gihtubURL": "",

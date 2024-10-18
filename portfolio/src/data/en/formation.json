@@ -1,0 +1,16 @@
+[
+    {
+        "school": "Epitech",
+        "description": "A school based on project-based learning where I developed my autonomy as well as teamwork skills. I coded numerous projects in C, C++, Python, React, and more, both individually and in groups. One of the school's core principles is teaching us how to learn, which gives me an advantage in mastering any new technology.",
+        "diploma": "Master's Degree in Computer Science (BAC +5)",
+        "startDate": "2019",
+        "endDate": "2024"
+    },
+    {
+        "school": "Solana",
+        "description": "Completed 13 different projects based on Solana blockchain technology. Learned principles such as: liquidity pools, minting and managing NFTs, smart contract security, etc.",
+        "diploma": "Solana Developer Bootcamp",
+        "startDate": "October 2024",
+        "endDate": ""
+    }
+]
