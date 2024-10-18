@@ -5,6 +5,7 @@ import { useLanguage } from "@/context/LanguageContext";
 const ContactModal = ({ isOpen, setIsOpen}) => {
     const { contact } = useLanguage();
     const [formData, setFormData] = useState({
+        name: "",
         email: "",
         subject: "",
         message: ""
@@ -19,27 +20,28 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
     };
     
     const handleSubmit = async (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    try {
-        const res = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-        });
+        try {
+            console.log("formData: ", formData)
+            const res = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
 
-        if (res.ok) {
-            toast.success()
-            setFormData({ email: '', subject: '', message: '' }); // Reset form after successful submission
-        } else {
+            if (res.ok) {
+                toast.success(contact.success)
+                setFormData({ name: "", email: '', subject: '', message: '' }); // Reset form after successful submission
+            } else {
+                setStatus(contact.error);
+            }
+        } catch (error) {
+            console.error('Error:', error);
             setStatus(contact.error);
         }
-    } catch (error) {
-        console.error('Error:', error);
-        setStatus(contact.error);
-    }
     };
 
     return (
@@ -50,6 +52,20 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                 <h2 className="text-2xl font-bold mb-4">{contact.contactMe}</h2>
 
                 <form onSubmit={handleSubmit}>
+
+                <div className="mb-4">
+                    <label htmlFor="email" className="block text-sm font-medium">
+                    Name
+                    </label>
+                    <input
+                    type="text"
+                    id="name"
+                    className="text-black mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                    />
+                </div>
 
                 <div className="mb-4">
                     <label htmlFor="email" className="block text-sm font-medium">
@@ -71,7 +87,7 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                     </label>
                     <input
                     type="text"
-                    id="name"
+                    id="subject"
                     className="text-black mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                     required
                     value={formData.subject}
