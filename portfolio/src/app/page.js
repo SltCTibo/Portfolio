@@ -26,7 +26,7 @@ import { useState } from "react";
 import ContactModal from "@/components/ContactModal";
 
 export default function Home() {
-  const { navbar, title, experiences, projects, formations } = useLanguage();
+  const { currentLanguage, navbar, title, experiences, projects, formations } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCopy = async () => {
@@ -67,7 +67,7 @@ export default function Home() {
               <button onClick={() => setIsOpen(true)} className="bg-white cursor-pointer border border-black px-4 md:px-6 py-2 md:py-3 rounded-full text-black text-[14px] md:text-[16px] w-[150px] md:w-[200px] font-bold shadow-xl hover:bg-gray-300">
                 {title.contactMe}
               </button>
-              <a className=" flex cursor-pointer items-center justify-center bg-gray-800 border border-gray-500 px-4 md:px-6 py-2 md:py-3 rounded-full text-white text-[14px] md:text-[16px] w-[150px] md:w-[200px] shadow-xl hover:bg-gray-900" href="/Resume-Thibault-BARBE.pdf" target="_blank" rel="noopener noreferrer">
+              <a className=" flex cursor-pointer items-center justify-center bg-gray-800 border border-gray-500 px-4 md:px-6 py-2 md:py-3 rounded-full text-white text-[14px] md:text-[16px] w-[150px] md:w-[200px] shadow-xl hover:bg-gray-900" href={`/Resume-Thibault-BARBE-${currentLanguage}.pdf`} target="_blank" rel="noopener noreferrer">
                 {title.resume}
               </a>
             </div>
