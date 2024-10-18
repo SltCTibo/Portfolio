@@ -1,0 +1,16 @@
+[
+    {
+        "school": "Epitech",
+        "description": "Ecole basée sur une pédagogie par projet où j'ai pu développer mes capacités d'autonomie mais aussi de travail d'équipe. J'ai pu codé de nombreux projets en C, C++, Python, React ... en solo ou en groupe. L'un des grands principe de cette école est surtout de nous apprendre à apprendre, j'ai donc un avantage sur la manière d'apprendre n'importe quelle nouvelle technologie.",
+        "diploma": "BAC +5 en informatique",
+        "startDate": "2019",
+        "endDate": "2024"
+    },
+    {
+        "school": "Solana",
+        "description": "Réalisation de 13 projets différents basés sur la technologie de la blockchain Solana. Apprentissage de principes comme: les pools de liquidité, minting et management de NFT, la sécurité des smarts contracts, etc...",
+        "diploma": "Solana developer Bootcamp",
+        "startDate": "Octobre 2024",
+        "endDate": ""
+    }
+]

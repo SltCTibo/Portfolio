@@ -1,10 +1,7 @@
-import Image from "next/image";
-import enSpecializationDatas from "@/data/en/specializations.json";
-import frSpecializationDatas from "@/data/fr/specializations.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Specializations = ({ data, currentLanguage }) => {
-
-    const specialization = currentLanguage === "en" ? enSpecializationDatas : frSpecializationDatas;
+    const { specialization } = useLanguage();
 
     return (
         <div className="w-full p-6 my-10 flex flex-row justify-around items-end">

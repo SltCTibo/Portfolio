@@ -25,8 +25,8 @@ const ProfessionnalCard = ({ company, logo, startDate, endDate, job, description
             <h2 className="text-md font-semibold text-white mb-6">{data.keySkills}</h2>
             <ul className="flex flex-row w-full justify-around items-center">
               {skills.map((skill, index) => (
-                <div className="flex flex-col items-center space-y-2">
-                    <div className="border-[3px] border-gray-200 rounded-full w-[70px] h-[70px] flex items-center justify-center">
+                <div key={index + "-div"} className="flex flex-col items-center space-y-2">
+                    <div key={index + "-div-div"} className="border-[3px] border-gray-200 rounded-full w-[70px] h-[70px] flex items-center justify-center">
                         <Image key={index} src={skillsLogo[index]} width={50} height={50} alt={skill} />
                     </div>
                     <li key={index}>{skill}</li>

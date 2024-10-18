@@ -2,19 +2,21 @@
     "past": [
         {
             "name": "WhaleMusic",
-            "subtitle": "",
-            "description": "",
+            "subtitle": "Ethereum based platform",
+            "description": "Whalemusic représente l'un des projects innovants d'Epitech, axé sur la technologie de la blockchain. Initié en 2021, ce projet propose une approche décentralisée dans l'industrie musicale, offrant aux jeunes artistes non reconnus la possibilité d'accéder à des fonds pour se faire connaître. Cette plateforme novatrice utilise la blockchain et le web3 pour automatiser la redistribution des fonds et garantir la sauvegarde des droits de coproduction grâce à l'utilisation de NFTs (tokens non fongibles).",
             "skills": ["NextJS", "TailwindCSS", "FeathersJS", "Solidity", "Docker", "PostgreSQL", "TurboRepo"],
-            "productionURL": "",
-            "gihtubURL": ""
+            "productionURL": "https://whalemusic.fr/",
+            "gihtubURL": "",
+            "image": "/projects/whalemusic.webp"
         },
         {
             "name": "DJCosmo",
             "subtitle": "Lyrics generator Web Site",
-            "description": "",
+            "description": "DJCosmo is a website that allows users to generate music lyrics using our integration of the OpenAI API. Users can interact with our solution in various ways: by generating lyrics with customizable settings, by requesting lyrics based on any subject they choose, or even by generating rhyming lines for a sentence they provide.",
             "skills": ["ReactJS", "FeathersJS", "PostgreSQL", "Docker", "TailwindCSS"],
             "productionURL": "",
-            "gihtubURL": ""
+            "gihtubURL": "",
+            "image": "/projects/djcosmo.png"
         }
     ],
     "present": [
@@ -42,7 +44,7 @@
         {
             "name": "TokenForge",
             "subtitle": "Solana token creator & NFT minting",
-            "description": " decentralized application enabling users to create and mint both fungible tokens and unique NFTs on the Solana blockchain, offering a seamless interface for tokenization.",
+            "description": "Decentralized application enabling users to create and mint both fungible tokens and unique NFTs on the Solana blockchain, offering a seamless interface for tokenization.",
             "skills": ["NextJS", "TypeScript", "Rust", "Solana Programs", "TailwindCSS", "Token", "NFT"],
             "productionURL": "",
             "gihtubURL": "",
