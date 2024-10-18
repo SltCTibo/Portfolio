@@ -1,16 +1,36 @@
 import toast from "react-hot-toast";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const ContactModal = ({ isOpen, setIsOpen}) => {
+const ContactModal = ({ isOpen, setIsOpen }) => {
     const { contact } = useLanguage();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         subject: "",
         message: ""
-    })
-    const [status, setStatus] = useState("")
+    });
+    const [status, setStatus] = useState("");
+    const modalRef = useRef(null);
+    const firstInputRef = useRef(null);
+
+    // Focus on the first input when modal opens
+    useEffect(() => {
+        if (isOpen && firstInputRef.current) {
+            firstInputRef.current.focus();
+        }
+    }, [isOpen]);
+
+    // Close modal when pressing ESC
+    useEffect(() => {
+        const handleEsc = (event) => {
+            if (event.key === "Escape") {
+                setIsOpen(false);
+            }
+        };
+        window.addEventListener("keydown", handleEsc);
+        return () => window.removeEventListener("keydown", handleEsc);
+    }, [setIsOpen]);
 
     const handleChange = (e) => {
         setFormData({
@@ -23,7 +43,6 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
         e.preventDefault();
 
         try {
-            console.log("formData: ", formData)
             const res = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
@@ -33,33 +52,48 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
             });
 
             if (res.ok) {
-                toast.success(contact.success)
-                setFormData({ name: "", email: '', subject: '', message: '' }); // Reset form after successful submission
+                toast.success(contact.success);
+                setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form after successful submission
             } else {
                 setStatus(contact.error);
+                toast.error(contact.error); // Show error using toast
             }
         } catch (error) {
-            console.error('Error:', error);
+            console.error("Error:", error);
             setStatus(contact.error);
+            toast.error(contact.error);
         }
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+        setStatus("");
     };
 
     return (
         <div>
         {isOpen && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-[#242732] p-8 rounded-lg shadow-lg w-full max-w-md">
+            <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-y-auto"
+            onClick={(e) => {
+                if (modalRef.current && !modalRef.current.contains(e.target)) {
+                closeModal();
+                }
+            }}
+            >
+            <div
+                ref={modalRef}
+                className="bg-[#242732] p-8 rounded-lg shadow-lg w-[90%] max-w-full md:max-w-md mx-auto overflow-hidden"
+            >
                 <h2 className="text-2xl font-bold mb-4">{contact.contactMe}</h2>
 
                 <form onSubmit={handleSubmit}>
-
                 <div className="mb-4">
-                    <label htmlFor="email" className="block text-sm font-medium">
-                    Name
-                    </label>
+                    <label htmlFor="name" className="block text-sm font-medium">Name</label>
                     <input
                     type="text"
                     id="name"
+                    ref={firstInputRef}
                     className="text-black mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                     required
                     value={formData.name}
@@ -68,9 +102,7 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                 </div>
 
                 <div className="mb-4">
-                    <label htmlFor="email" className="block text-sm font-medium">
-                    Email
-                    </label>
+                    <label htmlFor="email" className="block text-sm font-medium">Email</label>
                     <input
                     type="email"
                     id="email"
@@ -82,9 +114,7 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                 </div>
 
                 <div className="mb-4">
-                    <label htmlFor="name" className="block text-sm font-medium">
-                    {contact.subject}
-                    </label>
+                    <label htmlFor="subject" className="block text-sm font-medium">{contact.subject}</label>
                     <input
                     type="text"
                     id="subject"
@@ -96,9 +126,7 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                 </div>
 
                 <div className="mb-4">
-                    <label htmlFor="message" className="block text-sm font-medium">
-                    Message
-                    </label>
+                    <label htmlFor="message" className="block text-sm font-medium">Message</label>
                     <textarea
                     id="message"
                     className="text-black mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
@@ -112,7 +140,7 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                 <div className="flex justify-end">
                     <button
                     type="button"
-                    onClick={() => setIsOpen(false)}
+                    onClick={closeModal}
                     className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md mr-2 hover:bg-gray-400"
                     >
                     {contact.cancel}
@@ -125,12 +153,12 @@ const ContactModal = ({ isOpen, setIsOpen}) => {
                     </button>
                 </div>
                 </form>
-                {status && <p className="text-red-400">{status}</p>}
+                {status && <p className="text-red-400 mt-4">{status}</p>}
             </div>
             </div>
         )}
         </div>
-    )
-}
+    );
+};
 
 export default ContactModal;
