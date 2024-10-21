@@ -3,7 +3,7 @@
         {
             "name": "WhaleMusic",
             "subtitle": "Ethereum based platform",
-            "description": "Whalemusic représente l'un des projects innovants d'Epitech, axé sur la technologie de la blockchain. Initié en 2021, ce projet propose une approche décentralisée dans l'industrie musicale, offrant aux jeunes artistes non reconnus la possibilité d'accéder à des fonds pour se faire connaître. Cette plateforme novatrice utilise la blockchain et le web3 pour automatiser la redistribution des fonds et garantir la sauvegarde des droits de coproduction grâce à l'utilisation de NFTs (tokens non fongibles).",
+            "description": "Whalemusic represents one of Epitech's innovative projects, focused on blockchain technology. Initiated in 2021, this project offers a decentralized approach to the music industry, giving young, undiscovered artists the opportunity to access funds to gain recognition. This cutting-edge platform uses blockchain and web3 to automate the redistribution of funds and ensure the preservation of co-production rights through the use of NFTs (non-fungible tokens).",
             "skills": ["NextJS", "TailwindCSS", "FeathersJS", "Solidity", "Docker", "PostgreSQL", "TurboRepo"],
             "productionURL": "https://whalemusic.fr/",
             "gihtubURL": "",
